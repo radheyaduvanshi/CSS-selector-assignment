@@ -1,0 +1,16 @@
+/* remove bullet points and underline  */
+ul {
+list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* display the menu list item inline */
+
+header>nav>ul>li{
+    display: inline;
+}
+/* apply some margin between the menu list items */
+header nav ul li+li{
+    margin-left: 50px;
+}

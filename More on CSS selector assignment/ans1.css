@@ -1,0 +1,40 @@
+/* B-1  target all the anchor tags and change the color */
+ul li a{
+    color: red;
+}
+/* B-2 Target only the first h2 tag and change color */
+nav > h2 {
+    background-color: aqua;
+    color: red;
+}
+/* B-3 target the first p tag and change the text color */
+ nav > p:first-of-type {
+    color: red;
+}
+/* C-1 change the color of anchor tag with attribute "href" and remove the text underline */
+a[href='#'] {
+    color: red;
+    text-decoration: none;
+  }
+ /* C-2  change the color and provide the underline to anchor tag with the attribute of class name "active”, ,   */
+a.active{
+    text-decoration: underline;
+    color: red;
+}
+/* C-3 change the background color of anchor tag with the attribute of the target whose value is "_self”  */
+a[target="_self"]{
+    background-color: blueviolet;
+}
+/* D-1  three dots after the last p tag  */
+nav > p:last-of-type::after {
+    content: "...";
+}
+/* D-2 change the color of bulletes */
+ul li::marker{
+    color: rgb(0, 38, 255);
+} 
+/* D-3  change the color and increase the size of first letter of the second p tag */
+nav>p:nth-of-type(2)::first-letter{
+    color: red;
+    font-size: 30px;
+}
